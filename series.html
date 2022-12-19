@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    </head>
+
+<body>
+    <div class="contenedor">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a href="series.html"><button class="btn btn-outline-primary my-2 my-sm-0 mr-5" type="submit">INICIO</button></a>
+            <div class="dropdown mr-5">
+                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cambiar Seleccion
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="./series.html">Series</a>
+                  <a class="dropdown-item" href="./actores.html">Actores</a>
+                </div>
+              </div>
+              
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <form class="form-inline my-2 my-lg-0" id="formShow" action="" class="text-center mt-5 mb-3">
+                    <input class="form-control mr-sm-2" type="text" id="nombreShow">
+                    <button class="btn btn-outline-success my-2 my-sm-0 mr-5" type="submit">Buscar Serie</button>
+                </form>
+                <form class="form-inline my-2 my-lg-0" id="formIMDB" action="" class="text-center mt-5 mb-3">
+                    <input class="form-control mr-sm-2" type="text" id="imdbShow">
+                    <button class="btn btn-outline-success my-2 my-sm-0 mr-5" type="submit">Buscar Serie por IMDB</button>
+                </form>
+            </div>
+        </nav>
+        <h2 class="text-center mt-3">API TVMaze</h2>
+        <div class="container">
+
+            <div class="card" id="cardlistdiv">
+                <header class="card-header">
+                    <p class="card-header-title">
+                        Search List
+                    </p>
+                    <button class="siguiente float-right mb-5 ml-1 text-light bg-primary">SIGUIENTE</button>
+                    <button class="anterior float-right mb-5 ml-1 text-light bg-primary">ANTERIOR</button>
+                </header>
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col-6 barra">
+                            <ul class="lista">
+
+                            </ul>
+                        </div>
+                        <div class="col-6 cartas">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+<!--
+        <div class="container">
+            
+            <div class="resultados row justify-content-center">
+                
+
+            </div>
+            <ul class="lista">
+                
+            </ul>
+        </div>
+    </div>
+    -->
+    <script src="apiSeries.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
